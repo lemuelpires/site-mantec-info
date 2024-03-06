@@ -1,0 +1,56 @@
+/* Footer.module.css */
+
+.footerContainer {
+    background-color: #2a4658;
+    color: #fff;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactContainer {
+    max-width: 600px;
+    align-self: center;
+    font-size: 12px;
+}
+
+.contactTitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contactDescription {
+    margin-bottom: 20px;
+}
+
+.whatsappButton {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whatsappButton:hover {
+    background-color: #128c7e;
+}
+
+.defaultInfoContainer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 2em;
+}
+
+.defaultInfoContainer h3 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.defaultInfoContainer p {
+    color: #ddd;
+}

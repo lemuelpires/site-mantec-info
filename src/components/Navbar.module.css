@@ -1,0 +1,38 @@
+/* Navbar.module.css */
+
+.header {
+    display: flex; /* Alinhar os itens do cabeçalho na horizontal */
+    flex-direction: row; /* Alinhar os itens do cabeçalho na horizontal */
+    justify-content: space-between; /* Alinhar os itens à esquerda e à direita */
+    background-color: #2a4658; /* Azul claro como cor de fundo do cabeçalho */
+    padding: 1em 3em; /* Espaçamento interno */
+}
+
+.logo {
+   align-self: center; /* Alinhar o logo verticalmente */
+}
+
+.navLinks {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno da lista */
+    display: flex; /* Alinhar os itens da lista na horizontal */
+    justify-content: flex-end; /* Alinhar os itens à direita */
+    align-items: flex-end; /* Alinhar os itens verticalmente */
+}
+
+.navLink {
+    margin-right: 20px; /* Espaçamento entre os itens de navegação */
+    color: #ffffff; /* Texto branco para os links */
+    text-decoration: none; /* Remover sublinhado padrão */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+.navLink:hover {
+    color: #252728; /* Cor mais escura ao passar o mouse sobre o link */
+}
+
+.logoImage {
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto; /* Isso mantém a proporção original do logo */
+}
