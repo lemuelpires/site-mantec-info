@@ -1,38 +1,36 @@
-/* Navbar.module.css */
-
 .header {
-    display: flex; /* Alinhar os itens do cabeçalho na horizontal */
-    flex-direction: row; /* Alinhar os itens do cabeçalho na horizontal */
-    justify-content: space-between; /* Alinhar os itens à esquerda e à direita */
-    background-color: #2a4658; /* Azul claro como cor de fundo do cabeçalho */
-    padding: 1em 3em; /* Espaçamento interno */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2a4658;
+    padding: 1em 3em;
 }
 
 .logo {
-   align-self: center; /* Alinhar o logo verticalmente */
+   align-self: center; 
 }
 
 .navLinks {
-    list-style: none; /* Remover marcadores de lista */
-    padding: 0; /* Remover espaçamento interno da lista */
-    display: flex; /* Alinhar os itens da lista na horizontal */
-    justify-content: flex-end; /* Alinhar os itens à direita */
-    align-items: flex-end; /* Alinhar os itens verticalmente */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .navLink {
-    margin-right: 20px; /* Espaçamento entre os itens de navegação */
-    color: #ffffff; /* Texto branco para os links */
-    text-decoration: none; /* Remover sublinhado padrão */
+    margin-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Transição suave na mudança de cor */
+    transition: color 0.3s ease; 
 }
 
 .navLink:hover {
-    color: #252728; /* Cor mais escura ao passar o mouse sobre o link */
+    color: #252728;
 }
 
 .logoImage {
-    width: 200px; /* Ajuste conforme necessário */
-    height: auto; /* Isso mantém a proporção original do logo */
+    width: 200px;
+    height: auto;
 }

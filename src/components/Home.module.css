@@ -1,11 +1,15 @@
-/* Home.module.css */
-
 .homeContainer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #474f4f 0.5;
    
+}
+
+.sessionContainer {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .sectionTitle {
@@ -17,6 +21,7 @@
 .serviceContainer,
 .productContainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 }
