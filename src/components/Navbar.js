@@ -7,15 +7,12 @@ function Navbar() {
     const navigate = useNavigate();
 
     const handleHomeClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/');
     };
     const handleSobreClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/');
     };
     const handleContatoClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/');
     };
     return (

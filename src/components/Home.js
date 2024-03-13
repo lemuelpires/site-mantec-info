@@ -11,19 +11,15 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handleCelularClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/celular');
     };
     const handleNotebookClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/notebook');
     };
     const handleComputadorClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/computador');
     };
     const handleTabletClick = () => {
-        // Redirecionar para a página desejada ao clicar
         navigate('/tablet');
     };
 
