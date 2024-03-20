@@ -3,11 +3,10 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #474f4f 0.5;
-   
 }
 
 .sessionContainer {
-    display:flex;
+    display: flex;
 }
 
 .sectionTitle {
@@ -19,9 +18,9 @@
 .serviceContainer,
 .productContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .serviceCard,
@@ -31,8 +30,8 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    margin:1em;
-    max-width: 300px; 
+    margin: 1em;
+    max-width: 300px;
     max-height: 380px;
 }
 
@@ -45,31 +44,29 @@
     width: 100%;
     height: 150px;
     object-fit: cover;
-
 }
 
 .cardContent {
     padding: 15px;
+    text-align: center;
 }
 
 .cardTitle {
     font-size: 100%;
     margin-bottom: 10px;
     color: #333;
-    width: 100%;
 }
 
 .cardDescription {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Número de linhas que você quer mostrar */
+    -webkit-line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #555;
 }
 
-
-.cardButton{
+.cardButton {
     margin-top: 10px;
     padding: 10px 20px;
     border: none;
@@ -80,13 +77,23 @@
     transition: background-color 0.3s ease;
 }
 
+/* Remover sublinhado de todos os links */
+.serviceCard a {
+    text-decoration: none;
+    color: #333;
+}
 
 @media (max-width: 600px) {
-    .cardDescription {
-        font-size: 14px; /* Diminui o tamanho da fonte em dispositivos menores */
+    .serviceContainer,
+    .productContainer {
+        flex-direction: column;
+        align-items: center;
+        background-color: #09dcdc;
     }
 
-    .cardContent {
-        padding: 10px; /* Ajusta o padding para manter o conteúdo bem estruturado */
+    .serviceCard,
+    .productCard {
+        width: 90%;
+        max-width: none;
     }
 }

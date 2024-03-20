@@ -33,6 +33,7 @@ const Home = () => {
           imagem:notebook,
           route: '/notebook',
         },
+       
       ];
 
     return (
