@@ -8,8 +8,6 @@
 
 .sessionContainer {
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .sectionTitle {
@@ -28,12 +26,14 @@
 
 .serviceCard,
 .productCard {
-    width: 30%;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    margin:1em;
+    max-width: 300px; 
+    max-height: 380px;
 }
 
 .serviceCard:hover,
@@ -45,6 +45,7 @@
     width: 100%;
     height: 150px;
     object-fit: cover;
+
 }
 
 .cardContent {
@@ -52,11 +53,40 @@
 }
 
 .cardTitle {
-    font-size: 20px;
+    font-size: 100%;
     margin-bottom: 10px;
     color: #333;
+    width: 100%;
 }
 
 .cardDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Número de linhas que você quer mostrar */
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #555;
+}
+
+
+.cardButton{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+@media (max-width: 600px) {
+    .cardDescription {
+        font-size: 14px; /* Diminui o tamanho da fonte em dispositivos menores */
+    }
+
+    .cardContent {
+        padding: 10px; /* Ajusta o padding para manter o conteúdo bem estruturado */
+    }
 }

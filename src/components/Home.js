@@ -52,6 +52,7 @@ const Home = () => {
                                 <Link to={service.route}>
                                     <h3 className={styles.cardTitle} >{service.title}</h3>
                                     <p className={styles.cardDescription}>{service.description}</p>
+                                    <button className={styles.cardButton}>Saiba mais</button>
                                 </Link>
                             </div>
                         
