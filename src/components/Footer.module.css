@@ -1,10 +1,12 @@
+/* Footer.module.css */
 .footerContainer {
     background-color: #2a4658;
     color: #fff;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 20px;
 }
 
 .contactContainer {
@@ -26,7 +28,7 @@
     background-color: #25d366;
     color: #fff;
     padding: 10px 20px;
-    font-size: 10px;
+    font-size: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -51,4 +53,33 @@
 
 .defaultInfoContainer p {
     color: #ddd;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 600px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .contactContainer,
+    .defaultInfoContainer {
+        width: 100%;
+        max-width: none;
+        font-size: 14px;
+    }
+
+    .whatsappButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .contactTitle {
+        font-size: 16px;
+    }
+
+    .defaultInfoContainer h3 {
+        font-size: 16px;
+    }
 }

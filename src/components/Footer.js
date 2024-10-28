@@ -15,7 +15,6 @@ const Footer = () => {
                 <button onClick={handleWhatsAppRedirect} className={styles.whatsappButton}>Enviar mensagem</button>
             </div>
 
-            {/* Informações Padrão - Exemplo */}
             <div className={styles.defaultInfoContainer}>
                 <h3>Informações Gerais</h3>
                 <p>Endereço: Rua Exemplo, 123</p>
@@ -27,4 +26,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
