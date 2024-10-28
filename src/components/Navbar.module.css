@@ -1,13 +1,15 @@
+/* Navbar.module.css */
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #2a4658;
     padding: 1em 3em;
 }
 
 .logo {
-   align-self: center; 
+    align-self: center; 
 }
 
 .navLinks {
@@ -15,7 +17,7 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .navLink {
@@ -23,7 +25,8 @@
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; 
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .navLink:hover {
@@ -33,4 +36,62 @@
 .logoImage {
     width: 200px;
     height: auto;
+}
+
+/* Esconde o menu e mostra o botão hamburguer em telas menores */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .logoImage {
+        width: 150px;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px; /* Ajusta a posição do dropdown */
+        right: 10px;
+        background-color: #2a4658;
+        border-radius: 8px;
+        width: 150px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navLink {
+        margin: 10px 0;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        transition: background-color 0.3s ease;
+    }
+
+    .navLink:hover {
+        background-color: #252728;
+    }
 }
